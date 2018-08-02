@@ -1,14 +1,17 @@
 tinymce.init({
     selector: 'textarea',
     height: 500,
-    menubar: false,
+    // menubar: false,
+    language: 'pt_BR',
     plugins: [
-      'advlist autolink lists link image charmap print preview anchor textcolor',
-      'searchreplace visualblocks code fullscreen',
-      'insertdatetime media table contextmenu paste code help wordcount'
+      'autolink lists link image charmap preview textcolor',
+      'searchreplace fullscreen',
+      'insertdatetime media table contextmenu paste wordcount',
+      'fullpage  directionality',
+      'visualchars template codesample',
+      'hr advlist ',
+      'imagetools colorpicker',
+      'textpattern help',
     ],
-    toolbar: 'insert | undo redo |  formatselect | bold italic backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help',
-    content_css: [
-      '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
-      '//www.tinymce.com/css/codepen.min.css']
+    toolbar: [' insert | formatselect | bold italic forecolor backcolor | link | alignleft aligncenter alignright alignjustify  | bullist numlist outdent indent  | removeformat image | undo redo']
   });

@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <title>TNE Divulgação</title>
-    <script src="tinymce.min.js"></script>
-    <script>tinymce.init({ selector:'textarea' });</script>
+
+<head>
+  <meta charset="UTF-8">
+  <title>TNE Divulgação</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+</head>
+
 <body>
-    <textarea>
-    <p style="text-align: center;">
+  <div class="container">
+    <div class="justify-content-center">
+      <div class="col-md-8 ">
+          <textarea></textarea>
+          <button type="button" class="btn btn-primary" onclick="content()">Gerar HTML</button>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+<footer>
+  <script src="lib/tinymce.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.js"></script>
+  <script src="editor.js"></script>
+  <!-- <script>tinymce.init({ selector:'textarea' });</script> -->
+  <script>
+    function content() {
+      console.log(tinyMCE.activeEditor.getContent());
+    }
+  </script>
+</footer>
+
+</html>
+
+<!-- <p style="text-align: center;">
       <img title="TinyMCE Logo" src="//www.tinymce.com/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
     </p>
   
@@ -61,8 +91,4 @@
     </p>
     <p>
       Thanks for supporting TinyMCE! We hope it helps you and your users create great content.<br>All the best from the TinyMCE team.
-    </p>
-  </textarea>
-</body>
-
-</html>
+    </p> -->
