@@ -9,16 +9,39 @@
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
 </head>
 
-<body class="jumbotron">
-  <div >
+<body class="jumbotron" style="background-color:#e5e5e5; width: 100%;font-family: Arial, Helvetica, sans-serif;">
+  <section class=" mx-auto max-width: 600px; min-width: 340px; margin:auto; border-radius: 15px; -webkit-box-shadow: 0 10px 6px -6px #c4c4c4;-moz-box-shadow: 0 10px 6px -6px #777;box-shadow: 0 10px 6px -6px #777;">
     <div class="container">
-      <div class="col-xs-12 col-md-9 col-lg-9">
+      <div class="col-md-12 col-sm-12 col-lg-9 mx-auto">
+        <label for="input-assunto">
+          <h4>Assunto</h4>
+        </label>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Qual o assunto do email?" id="input-assunto" aria-label="Assunto" aria-describedby="Assunto">
+        </div>
+        <h4>Email</h4>
         <textarea></textarea>
-        <button type="button" class="btn btn-primary" onclick="content()">Gerar HTML</button>
+        <div class="mt-3">
+          <h4>Anexo</h4>
+          <div class="input-group">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+              <label class="custom-file-label" for="inputGroupFile04">Escolha um arquivo</label>
+            </div>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Anexar</button>
+            </div>
+          </div>
+          <div class="mt-3">
+            <button type="button" class="btn btn-primary" onclick="content()">Gerar HTML</button>
+
+          </div>
+
+        </div>
       </div>
     </div>
 
-
+  </section>
   </div>
 </body>
 <footer>
